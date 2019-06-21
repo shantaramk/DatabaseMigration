@@ -2,7 +2,7 @@
 # DatabaseMigration
 Database migration is required whenever there is a change in existing database in new version of the app.
 
-How to user 
+How to use
 
         DATABASEHELPER.initializeDatabase(Database.fileName)
         DATABASEHELPER.migrateToVersion(version: 1)
