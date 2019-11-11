@@ -1,0 +1,6 @@
+framework module Pods_DatabaseMigration {
+  umbrella header "Pods-DatabaseMigration-umbrella.h"
+
+  export *
+  module * { export * }
+}

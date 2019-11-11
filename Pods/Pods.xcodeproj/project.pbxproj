@@ -1,0 +1,1854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032C7E851138162F946209788DD4689C /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576E075B196CCBBBB9A0C198C90E27F /* CBC.swift */; };
+		0372B4CB53DA6298C3C13142B7239393 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = BEC8C92E1E03B69A95A23A1EB8246143 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DNDEBUG -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999 -fno-objc-arc"; }; };
+		0566899C870BAB693DC577E3E22CF4F7 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739FAA26FF85009C60B592F3BDB26234 /* String+FoundationExtension.swift */; };
+		068E7E07C95C1414200636CD5AB8D49D /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15115CF8883E42E027078DEA350E2EF5 /* PBKDF1.swift */; };
+		1049CFD71E54B588C66FC293C1EA223A /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28C537355F02831E94C2C16BA68504 /* Utils+Foundation.swift */; };
+		1263EB1FDCB41B8B69FF0E2E6D30DD94 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F73C4041AC041E805CDD91B9387F3F5C /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12968222CE856956292917C29F8E289A /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890FB209C68356A55758FCFC54933DB /* ChaCha20.swift */; };
+		13A12ED27F3E9F5D1129AE9F1387298D /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBD41DC2248D2AB17054975A90887 /* BlockCipher.swift */; };
+		165719C6963AB604318CC97C300E7D4D /* BatchedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBA66604926787C4CD16A765C1B8D6 /* BatchedCollection.swift */; };
+		1869E51B0C78A0E0E822E50E896EDA7D /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB844A81AE3349BE42B8C758B99401 /* OFB.swift */; };
+		1C64FBFC7FC934DDACCBE91BF65399A2 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9F7AD3B04CCED0B0DAFC85C51B38D /* SHA2.swift */; };
+		204B94FB5CECA03673274B315519DAA9 /* DigestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B131331D8618F307BBC7179D9EF0FA /* DigestType.swift */; };
+		20A9A4B4078CDDFE4AF8AC49593E8A42 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE87F5114DB206D45D7AF7B23B134AC /* KeychainItemAccessibility.swift */; };
+		20F1F5F8F7160DCD31D148C30E0AB508 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = C188E7707631BBA2715C4FA46224B74C /* PKCS7.swift */; };
+		249E84DBBFA0D3C6F325B66140488F9E /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF0B5651A9424772C690EE8F8D281BF /* Padding.swift */; };
+		27276012E73B2BC2E2BDA69D16FD5897 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F046EBB631AED762CE8EF08E1EFA2 /* Foundation.framework */; };
+		303EFEC4793D6E522E696ADF35E0F45A /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330DDDE9B026057C2CE13DC25ECACA6 /* Rabbit+Foundation.swift */; };
+		31B5EFC1D57BA12861BAFC1035597927 /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87153453C5685F96F0F61294D7500AE4 /* SQLCipher-dummy.m */; };
+		357F0B1A69B692472084F34A6F2E81CC /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A981E6330F051EB64BE70E6A7E6670 /* Authenticator.swift */; };
+		363191B3A41D51E140294BC89298A3F9 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = E68E0F19C1B9E5EE90F13445D9287C79 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D3B8EB4D23EA1F72299497B9040D5B6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA7D650ED14A474554EEC7EA7B37710 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		40512C9B317A8280D1288F4C76167549 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23E78670FFB8A5720303C3DF4A45E0 /* Array+Foundation.swift */; };
+		443219221089F48C4BC816067D72A65B /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600FBAB5FF772072DBA5756ABC937D31 /* AES+Foundation.swift */; };
+		45476A14851C2EB13E6447327902D466 /* RandomBytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A039202139FF77FDB6AA710B12542A /* RandomBytesSequence.swift */; };
+		4742ED0EE22F5A0E258C81DA3942C1ED /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E18762F7DCD58C577A6CBFE8656AB8 /* UInt32+Extension.swift */; };
+		485AFBD565D2B6EE10E256DF820D3C9F /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD474F530A93A4F3B2A4E6242DE3437 /* PKCS5.swift */; };
+		52213019324C788E944186E941AB0321 /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087AC580ECA6E56C2B6593D884EC45E6 /* CTR.swift */; };
+		55D9AAD4E963A78D8147A0ABB447B930 /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A9D79A2868ADDBDF67E895D31864C2 /* ECB.swift */; };
+		5BA7FD41B931FB2F97C2C02319FB71FA /* Pods-DatabaseMigrationUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC9701F061649127E2E3ED6B33A4C55 /* Pods-DatabaseMigrationUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D2594DC36F3418F18F55FC332486636 /* SHA3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E462DED1E48BE59EA59A128109EEB4 /* SHA3.swift */; };
+		65C928CDCA18FAC8D831958EA846C5B0 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65020297683313271EFFF1DF6BD74598 /* Bit.swift */; };
+		6670FE2737C60AF92F9D303FE6DE7D9A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097CABFCDFA4559627F35A948C8205E /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6EBCB4B4941CF235F24559946CC1330C /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2B26B929C2BC5EC6B5C91BBD0D41D8 /* FMDB-dummy.m */; };
+		6ED1C4085935FB771E52EC4741111A47 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F50B832B7262B0F6415E701A6A41C2A /* Cipher.swift */; };
+		6EE4A8AC454BA7D2F604BD374FD4A2D7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F6D9C609675527487AAA79D341749 /* String+Extension.swift */; };
+		6F8E9881530B1BDE6AC51CDA47000984 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BDB8AD7D1B06DAE3743972E71A5CF9 /* Updatable.swift */; };
+		7398BA819E22E642DE91A16136701D87 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C59E4985285FC213E956760151F1E1 /* Security.framework */; };
+		757D47F18BF35F18BF9CEEF42DC886DA /* Blowfish+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69B5200387C210ACDECD4AFDB2C13E /* Blowfish+Foundation.swift */; };
+		764D5FC1BDBB28E8159694F6AED53933 /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A622D9BA3F0843712F62F73416A8E7 /* BlockMode.swift */; };
+		77E6142BDCCB700E8A92B807B018589A /* CryptoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B735500DAD06D569F1535923ECEC8C7 /* CryptoSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A6A5E6868A7C4F0E0E4DD6F0AF4B917 /* RandomAccessBlockModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51AD20182EFBF7B15BE6D23D46EC052 /* RandomAccessBlockModeWorker.swift */; };
+		7C0712F08B4EDC71242BC2D2E91D83D4 /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60476912649CAEF747CB7E3CC4DF1722 /* BlockModeOptions.swift */; };
+		7ED87E8A6EFA4D562AF551BA52587F87 /* HKDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854E01C89B4D836A17E22FAAC25B733 /* HKDF.swift */; };
+		801E2BD612215252FFF0301C1E6DCB61 /* Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DBF4DD9E70E3E86C41135D8506457C /* Cryptors.swift */; };
+		8330774C740AB06E7E049E7F429BD6D9 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201F3EAA95480DA25DF4898472C9319 /* SecureBytes.swift */; };
+		83361CD38688B987C2EC0E54ABFF0D29 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AF2A9FA8C74CCB3B272E68C93632F /* Collection+Extension.swift */; };
+		8426E3C0B72B119F3CA4574E721AAEF5 /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7AD8B3E048FD1DE62853895A5BBB7 /* CFB.swift */; };
+		8DC29E0A826425D8A464F758E0D10791 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C0F1B5094793E90CE0ED49325B4B8 /* Generics.swift */; };
+		8E0070168B8B9F2F85F7967F3C75B261 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FF8E850DDAC66EFB7EE2DD6A5B6701 /* AES.swift */; };
+		8F1ACD4E6D75DCBAED8BDA601605D576 /* PKCS7Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B7D2B617ED91B47E2F494836CF51B /* PKCS7Padding.swift */; };
+		8FDDE1202E56DF5F2AF049871A2173A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F046EBB631AED762CE8EF08E1EFA2 /* Foundation.framework */; };
+		90C07F4395D5A641D9D3E32E3D750BA5 /* Pods-DatabaseMigration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 403F96FA0BCF904A768840D50AA8F07A /* Pods-DatabaseMigration-dummy.m */; };
+		91C29C5465545F723FF52A2B9A98AE61 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D5FE73596B1EA898277A6ABD51CFF2 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928C7662E3E9EFA99CD5DF95F24370F0 /* AES.Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8F5975AF3D062306BF78140F7A3D69 /* AES.Cryptors.swift */; };
+		933358A35E52F43C8FB9FFEE6076B6A2 /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E25B4408E7D976669FD84225143C /* Poly1305.swift */; };
+		971D29D7EA936AD728E0B6EFCF964BED /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4D605C7BCBCC0543C42F0FC4D5CE0 /* Operators.swift */; };
+		9C239CA425489B99CB07A96C0B6894F7 /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977AFC462A0D86F05AF9939F8977D45D /* PCBC.swift */; };
+		9F7DCAA245AAA39B35FC0BECF3C4B2F0 /* Pods-DatabaseMigrationUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D17D35FBA43516997B2E74864DCD67 /* Pods-DatabaseMigrationUITests-dummy.m */; };
+		A0E71E2D148E84CE57F3BE71D2A808E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F046EBB631AED762CE8EF08E1EFA2 /* Foundation.framework */; };
+		A17DDCC94A594604ED5CB7149491E132 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = A16A8CDBD9D0CF35C4705B394AF88010 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1BA7E1EAA401D3E25F4E16A08D3E65C /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6467B5DDDBF7E6E2303A16D56BCAB /* SHA1.swift */; };
+		A2A1260C5AEE7A0187C526BB9E90EE90 /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264468780273F2A94AFF7A22296565CB /* PBKDF2.swift */; };
+		A7701F1FC75F5C3019F1CDCF8A708C6F /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF74C2D307001A8A8E191990325B6F /* Array+Extensions.swift */; };
+		A77138423F13D5237233931075F87E46 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F997DE59605A553458BF06911167E4 /* MD5.swift */; };
+		A9081F401BA346B177C20FB9CE9B6A61 /* RandomAccessCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DC110E1D8CDDCC85D513146E0B526 /* RandomAccessCryptor.swift */; };
+		A99C6BDACF1B13D82B291031742E9E2C /* SwiftKeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 33783E8BE7A1EAE8D702C7C0EEE75081 /* SwiftKeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B32FC322426DA6D382CEAD2E3377F5AD /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8D8F6C8433D5A6E9D487A553025C22 /* UInt64+Extension.swift */; };
+		B6DC0050E1410F2880B36F831DB95FEA /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E70FC1C75707B1D0716EE7D6F50A8E /* Data+Extension.swift */; };
+		B74F2136A0AD4A2E39B7A5658FEFF0F9 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F21095F52E5FA61DEC11891C53B98CD4 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9EDE93530C589345B893944A9230608 /* Pods-DatabaseMigration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4212F04E91D1B7EA953B326C1395940D /* Pods-DatabaseMigration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAE46B155714CA1F072E45CFF1655F6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F046EBB631AED762CE8EF08E1EFA2 /* Foundation.framework */; };
+		BCB82EB7E95326D5EB7748C14A91605C /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3120569FC0988AAE4788AF4B186F8D /* NoPadding.swift */; };
+		BCFB22880787EB920A3C4486102F64A8 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DB5A5CC90409775E021E7A06BD8E5 /* HMAC.swift */; };
+		C0C6A9FFBC9F44F1A9A3DF578F3A8186 /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E829CE1B1103BC7C6B7684D2B4A2E2B /* HMAC+Foundation.swift */; };
+		C195D690C11AD93859729738F72660FF /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59487559C01D5A310757E4CFD3E1EE93 /* KeychainWrapper.swift */; };
+		C4202F247181C85E5517AC57080AAFBF /* Pods-DatabaseMigrationTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFFADD5D1023B730BCA56608C712F4B /* Pods-DatabaseMigrationTests-dummy.m */; };
+		C7789AA13057B6E638841FF680A7C696 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 2569DCC9495D2A5A3F38A5BEE47D95F7 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B3D3BBC0640EF19BA6006DA60C3416 /* CryptoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD4B48C0E7A197E63EFFEF5E1C9409A /* CryptoSwift-dummy.m */; };
+		C9A58ECEE8A5D0DF85017407E5746DE9 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84418F0326F1E96B9BE5DE19204ED01 /* Array+Extension.swift */; };
+		CA7697FD51CB12B67EC92329CB9498BF /* ZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB5AE1B8BEC1A597BF859023F7E934 /* ZeroPadding.swift */; };
+		CC825080449ADE2D4649A21139B94A76 /* SQLCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BEF9F861167A98DEA1498BD54A9322 /* SQLCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD94277EB0703ECD5854B54DCF22FCC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F046EBB631AED762CE8EF08E1EFA2 /* Foundation.framework */; };
+		CDE893452A4217631DE954149D55E49F /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F33D93BE349D30C1E60E58F55070A /* UInt8+Extension.swift */; };
+		D0580AB3DDCFAB1B0DB309051E65A305 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 823A350731F3358F3E7B485CE7FA8990 /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11E27768C3D7042E495CC9DB46F7B63 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864F1A2451EBDBC065C993268237B48 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D2FC23E272AE05F3FE25750A55EDAB89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F046EBB631AED762CE8EF08E1EFA2 /* Foundation.framework */; };
+		D4AC5878485524A19CA8DFD60CF77375 /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69BB2E4AD3DF30C5A969423C2F523E5 /* SQLCipher.framework */; };
+		D8533D1C9EA7D9964E95241DEF63905E /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7039EE574CFF50DF8AD72C158FA0E /* Digest.swift */; };
+		D9656C53925D64890EC74A476327FE65 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E5CFFE1D7427037E7924FE9CE92DE1 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DB36B047A737F6F816E5799096258DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215F046EBB631AED762CE8EF08E1EFA2 /* Foundation.framework */; };
+		DBC6F76E7EE2E018A8F0C2A915691D4D /* BlockModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984790D9B1FFF9E1546F4617E598816 /* BlockModeWorker.swift */; };
+		E218178EC4BCCF506AB6A399A21BA5EB /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F215019CAD1C2BF97DC4827A93DE541 /* Blowfish.swift */; };
+		E66DE34B9E642B42A247D9F2E4BA9D19 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323A2D91614A4DE09909970923D0FF49 /* Checksum.swift */; };
+		E6C29289B9704AB3285A1EC93DD2072F /* SwiftKeychainWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDA78D783C9836C4C2133F8C5C0E78 /* SwiftKeychainWrapper-dummy.m */; };
+		E78C281224D44EDACBF0C0C39E1C8144 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38822FBB44A3D848561EECD0BB2B86EF /* Utils.swift */; };
+		EBE593FE683CC340CDABA82F3DD392DB /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3680CF13EF162FC8A10F6F7EC4783C6C /* Int+Extension.swift */; };
+		EE123A7FF2B42ADB4E6DD11606103F4A /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFA8B2634A77BA8BF67D262D1138BE /* Rabbit.swift */; };
+		F329C452F177B85E713999B360E769A1 /* Pods-DatabaseMigrationTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3894BF8977AAEB27EE04F1A692DDC0D3 /* Pods-DatabaseMigrationTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5E6FFDEBE8EE76DF170AD020F5C57AF /* SwiftKeychainWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98BFCD619B04E22049EC30E685D16342 /* SwiftKeychainWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8D2D3164D0541A8DAC33D27FD5B6785 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D5EFBEF3F3C7C3CAC77210C4DEA0C1 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FB7AF59E9922805F9381448B2A8DDF9F /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFDB3B59202D61C2FA8B4DC8D41411 /* ChaCha20+Foundation.swift */; };
+		FD87A0E742A3F83FF9BEBAD09A51C731 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = A56932D23837F5DC8F71113ADE03804F /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDF442F8B9B340EA7E1D2AF76599D95 /* UInt16+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A029137CD789AEAD37AB668A8860D6 /* UInt16+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E0EC457F77433DD9D07BEE87F362987 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD001B9F6C99C849C47A82A9ADAC5321;
+			remoteInfo = SQLCipher;
+		};
+		569CB0320F877AC684F04A135A752684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA1847764C84E7705DEB14A33A1936AE;
+			remoteInfo = FMDB;
+		};
+		95A87DBDB8927665B8C967AA9484A074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8FFC9AC7CAA9414E4FFB29D876FD712;
+			remoteInfo = CryptoSwift;
+		};
+		BD7A4C9CD821DC2C43313D617E84DB81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD001B9F6C99C849C47A82A9ADAC5321;
+			remoteInfo = SQLCipher;
+		};
+		C00D6EF988E54D14BFF25D8A07AE2751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D74AD01A19E3591FFC26F551F2EB5E8;
+			remoteInfo = "Pods-DatabaseMigration";
+		};
+		EC2A711B95F90D7A58B28D5A235DA9F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D74AD01A19E3591FFC26F551F2EB5E8;
+			remoteInfo = "Pods-DatabaseMigration";
+		};
+		F0887DF3C3E4838A547984EC3CB9A63F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD2730DAA1CFC0F43915E51A72AF15D3;
+			remoteInfo = SwiftKeychainWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0097CABFCDFA4559627F35A948C8205E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		00BDB8AD7D1B06DAE3743972E71A5CF9 /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/CryptoSwift/Updatable.swift; sourceTree = "<group>"; };
+		0330DDDE9B026057C2CE13DC25ECACA6 /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
+		0390E842F87B24892A065EBA3F6F1FE6 /* Pods-DatabaseMigration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DatabaseMigration.debug.xcconfig"; sourceTree = "<group>"; };
+		03E7039EE574CFF50DF8AD72C158FA0E /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Sources/CryptoSwift/Digest.swift; sourceTree = "<group>"; };
+		0419D9F548AEFD47D3B9B594AFC6680C /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
+		04B54CAECFBFCDD523314B4E2F0281A3 /* Pods_DatabaseMigrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DatabaseMigrationTests.framework; path = "Pods-DatabaseMigrationTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F997DE59605A553458BF06911167E4 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
+		087AC580ECA6E56C2B6593D884EC45E6 /* CTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTR.swift; path = Sources/CryptoSwift/BlockMode/CTR.swift; sourceTree = "<group>"; };
+		09A029137CD789AEAD37AB668A8860D6 /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "Sources/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
+		0BE8E25B4408E7D976669FD84225143C /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
+		0BEF62F3429E428AEBF2AB5FA758891C /* Pods_DatabaseMigration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DatabaseMigration.framework; path = "Pods-DatabaseMigration.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD474F530A93A4F3B2A4E6242DE3437 /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS/PKCS5.swift; sourceTree = "<group>"; };
+		1201F3EAA95480DA25DF4898472C9319 /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
+		137A596266A5E31F993B00260AE9F8B5 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		15115CF8883E42E027078DEA350E2EF5 /* PBKDF1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF1.swift; path = Sources/CryptoSwift/PKCS/PBKDF1.swift; sourceTree = "<group>"; };
+		162247EEE392AFEAB72F4B481AEDAB08 /* Pods-DatabaseMigration-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DatabaseMigration-Info.plist"; sourceTree = "<group>"; };
+		175F584C9D7635375C987CBB75D22735 /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
+		181DB5A5CC90409775E021E7A06BD8E5 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
+		1864F1A2451EBDBC065C993268237B48 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		215F046EBB631AED762CE8EF08E1EFA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2569DCC9495D2A5A3F38A5BEE47D95F7 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		264468780273F2A94AFF7A22296565CB /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS/PBKDF2.swift; sourceTree = "<group>"; };
+		27CE676D10BD423E971EC6B2CFD1B6D8 /* Pods-DatabaseMigrationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DatabaseMigrationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2854E01C89B4D836A17E22FAAC25B733 /* HKDF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HKDF.swift; path = Sources/CryptoSwift/HKDF.swift; sourceTree = "<group>"; };
+		2890FB209C68356A55758FCFC54933DB /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
+		2984790D9B1FFF9E1546F4617E598816 /* BlockModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeWorker.swift; path = Sources/CryptoSwift/BlockMode/BlockModeWorker.swift; sourceTree = "<group>"; };
+		2D2F33D93BE349D30C1E60E58F55070A /* UInt8+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extension.swift"; path = "Sources/CryptoSwift/UInt8+Extension.swift"; sourceTree = "<group>"; };
+		2FBCACC5422E0A3B9A949945E7D8C25B /* Pods-DatabaseMigrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DatabaseMigrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30D17D35FBA43516997B2E74864DCD67 /* Pods-DatabaseMigrationUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DatabaseMigrationUITests-dummy.m"; sourceTree = "<group>"; };
+		323A2D91614A4DE09909970923D0FF49 /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
+		33783E8BE7A1EAE8D702C7C0EEE75081 /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftKeychainWrapper.h; path = SwiftKeychainWrapper/SwiftKeychainWrapper.h; sourceTree = "<group>"; };
+		34BB5AE1B8BEC1A597BF859023F7E934 /* ZeroPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroPadding.swift; path = Sources/CryptoSwift/ZeroPadding.swift; sourceTree = "<group>"; };
+		3680CF13EF162FC8A10F6F7EC4783C6C /* Int+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Sources/CryptoSwift/Int+Extension.swift"; sourceTree = "<group>"; };
+		36983549AA9D102B5E6CEF75EB7503A4 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		38822FBB44A3D848561EECD0BB2B86EF /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
+		3894BF8977AAEB27EE04F1A692DDC0D3 /* Pods-DatabaseMigrationTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DatabaseMigrationTests-umbrella.h"; sourceTree = "<group>"; };
+		3FE6467B5DDDBF7E6E2303A16D56BCAB /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
+		403F96FA0BCF904A768840D50AA8F07A /* Pods-DatabaseMigration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DatabaseMigration-dummy.m"; sourceTree = "<group>"; };
+		4212F04E91D1B7EA953B326C1395940D /* Pods-DatabaseMigration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DatabaseMigration-umbrella.h"; sourceTree = "<group>"; };
+		42BEF9F861167A98DEA1498BD54A9322 /* SQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-umbrella.h"; sourceTree = "<group>"; };
+		4415D476B183B7C1435A67E97654592F /* SQLCipher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SQLCipher-Info.plist"; sourceTree = "<group>"; };
+		44F74E4846E09C0B9E7BA48D29DDB2D8 /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
+		4CA4B660F26EB09361B89E8DDFDF5379 /* Pods-DatabaseMigration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DatabaseMigration.modulemap"; sourceTree = "<group>"; };
+		51A36C5609C6D4DF48CBE41F7AA7F80F /* Pods-DatabaseMigrationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DatabaseMigrationTests.modulemap"; sourceTree = "<group>"; };
+		55AB844A81AE3349BE42B8C758B99401 /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OFB.swift; path = Sources/CryptoSwift/BlockMode/OFB.swift; sourceTree = "<group>"; };
+		577B7D2B617ED91B47E2F494836CF51B /* PKCS7Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7Padding.swift; path = Sources/CryptoSwift/PKCS/PKCS7Padding.swift; sourceTree = "<group>"; };
+		58C7AD8B3E048FD1DE62853895A5BBB7 /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
+		59487559C01D5A310757E4CFD3E1EE93 /* KeychainWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = SwiftKeychainWrapper/KeychainWrapper.swift; sourceTree = "<group>"; };
+		5B3976F59747E2D08AED5AD4896F7136 /* Pods-DatabaseMigrationTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DatabaseMigrationTests-Info.plist"; sourceTree = "<group>"; };
+		5B735500DAD06D569F1535923ECEC8C7 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
+		5CEFDB3B59202D61C2FA8B4DC8D41411 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
+		5E578BFD286C269E7430A8E6103DA048 /* Pods-DatabaseMigration-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DatabaseMigration-frameworks.sh"; sourceTree = "<group>"; };
+		5E6B0E4819118A39CF1788B88B5D01B6 /* Pods-DatabaseMigration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DatabaseMigration-acknowledgements.markdown"; sourceTree = "<group>"; };
+		600FBAB5FF772072DBA5756ABC937D31 /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
+		60476912649CAEF747CB7E3CC4DF1722 /* BlockModeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeOptions.swift; path = Sources/CryptoSwift/BlockMode/BlockModeOptions.swift; sourceTree = "<group>"; };
+		63A622D9BA3F0843712F62F73416A8E7 /* BlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockMode.swift; path = Sources/CryptoSwift/BlockMode/BlockMode.swift; sourceTree = "<group>"; };
+		63DDBD41DC2248D2AB17054975A90887 /* BlockCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCipher.swift; path = Sources/CryptoSwift/BlockCipher.swift; sourceTree = "<group>"; };
+		65020297683313271EFFF1DF6BD74598 /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
+		6576E075B196CCBBBB9A0C198C90E27F /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
+		67E5CFFE1D7427037E7924FE9CE92DE1 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		6A8D8F6C8433D5A6E9D487A553025C22 /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
+		6CA4D605C7BCBCC0543C42F0FC4D5CE0 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/CryptoSwift/Operators.swift; sourceTree = "<group>"; };
+		6CBF74C2D307001A8A8E191990325B6F /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extensions.swift"; path = "Sources/CryptoSwift/Array+Extensions.swift"; sourceTree = "<group>"; };
+		739FAA26FF85009C60B592F3BDB26234 /* String+FoundationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FoundationExtension.swift"; path = "Sources/CryptoSwift/Foundation/String+FoundationExtension.swift"; sourceTree = "<group>"; };
+		76D5FE73596B1EA898277A6ABD51CFF2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		78A039202139FF77FDB6AA710B12542A /* RandomBytesSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomBytesSequence.swift; path = Sources/CryptoSwift/RandomBytesSequence.swift; sourceTree = "<group>"; };
+		79E18762F7DCD58C577A6CBFE8656AB8 /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
+		7A56E484106D5B5A7F87EE1D58C5F799 /* Pods-DatabaseMigration-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DatabaseMigration-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C5AD6001A9948ED479E44F3081BEA87 /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLCipher.framework; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB9F7AD3B04CCED0B0DAFC85C51B38D /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
+		7D2B26B929C2BC5EC6B5C91BBD0D41D8 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		7F215019CAD1C2BF97DC4827A93DE541 /* Blowfish.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blowfish.swift; path = Sources/CryptoSwift/Blowfish.swift; sourceTree = "<group>"; };
+		80A981E6330F051EB64BE70E6A7E6670 /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
+		823A350731F3358F3E7B485CE7FA8990 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		85B131331D8618F307BBC7179D9EF0FA /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
+		87153453C5685F96F0F61294D7500AE4 /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
+		89B42FD494C5EFBB2C18C755B43245D3 /* Pods-DatabaseMigrationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DatabaseMigrationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8B3120569FC0988AAE4788AF4B186F8D /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
+		8B5E0C8459D4E0EED1C29F43BE18BF10 /* SwiftKeychainWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-prefix.pch"; sourceTree = "<group>"; };
+		8CCE2CA1F2B447F1CB7AABA6F3B84472 /* SwiftKeychainWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftKeychainWrapper.xcconfig; sourceTree = "<group>"; };
+		8E829CE1B1103BC7C6B7684D2B4A2E2B /* HMAC+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HMAC+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/HMAC+Foundation.swift"; sourceTree = "<group>"; };
+		8EDDECDB0057715941B6D3CF5547928A /* SQLCipher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.xcconfig; sourceTree = "<group>"; };
+		94E462DED1E48BE59EA59A128109EEB4 /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
+		966C0F1B5094793E90CE0ED49325B4B8 /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
+		977AFC462A0D86F05AF9939F8977D45D /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
+		98BFCD619B04E22049EC30E685D16342 /* SwiftKeychainWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-umbrella.h"; sourceTree = "<group>"; };
+		99C59E4985285FC213E956760151F1E1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		9C6DC110E1D8CDDCC85D513146E0B526 /* RandomAccessCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomAccessCryptor.swift; path = Sources/CryptoSwift/RandomAccessCryptor.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E23E78670FFB8A5720303C3DF4A45E0 /* Array+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Array+Foundation.swift"; sourceTree = "<group>"; };
+		9F50B832B7262B0F6415E701A6A41C2A /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/CryptoSwift/Cipher.swift; sourceTree = "<group>"; };
+		A0D5EFBEF3F3C7C3CAC77210C4DEA0C1 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		A16A8CDBD9D0CF35C4705B394AF88010 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		A1D8F21C5DB72C9BFF1FDA72CA6EE541 /* FMDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMDB-Info.plist"; sourceTree = "<group>"; };
+		A56932D23837F5DC8F71113ADE03804F /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		AABDA78D783C9836C4C2133F8C5C0E78 /* SwiftKeychainWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftKeychainWrapper-dummy.m"; sourceTree = "<group>"; };
+		ACC9701F061649127E2E3ED6B33A4C55 /* Pods-DatabaseMigrationUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DatabaseMigrationUITests-umbrella.h"; sourceTree = "<group>"; };
+		ACFFA8B2634A77BA8BF67D262D1138BE /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
+		AEFFADD5D1023B730BCA56608C712F4B /* Pods-DatabaseMigrationTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DatabaseMigrationTests-dummy.m"; sourceTree = "<group>"; };
+		AF744E820C0A9D9481D718A08C57A11F /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DC41996EBC95FC5BB967E32510EE5F /* SwiftKeychainWrapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftKeychainWrapper-Info.plist"; sourceTree = "<group>"; };
+		B26C0A77553B255C66C72E0921FC9DC9 /* Pods-DatabaseMigration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DatabaseMigration.release.xcconfig"; sourceTree = "<group>"; };
+		B51AD20182EFBF7B15BE6D23D46EC052 /* RandomAccessBlockModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomAccessBlockModeWorker.swift; path = Sources/CryptoSwift/BlockMode/RandomAccessBlockModeWorker.swift; sourceTree = "<group>"; };
+		B9DBF4DD9E70E3E86C41135D8506457C /* Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptors.swift; path = Sources/CryptoSwift/Cryptors.swift; sourceTree = "<group>"; };
+		BA0F88053672BEC6D9333127FFB90421 /* Pods_DatabaseMigrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DatabaseMigrationUITests.framework; path = "Pods-DatabaseMigrationUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB03FC65F58F764F003D0AD07870CC8 /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
+		BEC8C92E1E03B69A95A23A1EB8246143 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.c; sourceTree = "<group>"; };
+		C188E7707631BBA2715C4FA46224B74C /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS/PKCS7.swift; sourceTree = "<group>"; };
+		C6769BC8EF710D851802B46171B531F1 /* CryptoSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CryptoSwift-Info.plist"; sourceTree = "<group>"; };
+		C73AF2A9FA8C74CCB3B272E68C93632F /* Collection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extension.swift"; path = "Sources/CryptoSwift/Collection+Extension.swift"; sourceTree = "<group>"; };
+		C79C04636A34E8CF76563416D64B9941 /* Pods-DatabaseMigrationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DatabaseMigrationTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C82346D8DDCED658D0630766B7310495 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftKeychainWrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C866583956C7EAEE771B9A7409D021A6 /* Pods-DatabaseMigrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DatabaseMigrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDE87F5114DB206D45D7AF7B23B134AC /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainItemAccessibility.swift; path = SwiftKeychainWrapper/KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		CE69B5200387C210ACDECD4AFDB2C13E /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Blowfish+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift"; sourceTree = "<group>"; };
+		D457DE55BDAA5B6DE40D145402FC50C3 /* Pods-DatabaseMigrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DatabaseMigrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D69BB2E4AD3DF30C5A969423C2F523E5 /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84418F0326F1E96B9BE5DE19204ED01 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
+		D9E70FC1C75707B1D0716EE7D6F50A8E /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/CryptoSwift/Foundation/Data+Extension.swift"; sourceTree = "<group>"; };
+		DB36DD938AC0C07DCD40BED17D42B688 /* Pods-DatabaseMigrationUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DatabaseMigrationUITests.modulemap"; sourceTree = "<group>"; };
+		DB64EE1E04C4BA5E55B249F9BE66C777 /* Pods-DatabaseMigrationUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DatabaseMigrationUITests-Info.plist"; sourceTree = "<group>"; };
+		DE8F5975AF3D062306BF78140F7A3D69 /* AES.Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.Cryptors.swift; path = Sources/CryptoSwift/AES.Cryptors.swift; sourceTree = "<group>"; };
+		DF9F6D9C609675527487AAA79D341749 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
+		E044F4862B97B34931364AE68ED15AC9 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
+		E4B8A966E72E42D040CAF0A6C1A95741 /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLCipher.modulemap; sourceTree = "<group>"; };
+		E68E0F19C1B9E5EE90F13445D9287C79 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		E70D4950B3CE5367B2F33800BB661E5A /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8440F871676C4B12801A31C1A761B29 /* Pods-DatabaseMigrationUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DatabaseMigrationUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E88D629B7D2908975C1079E6D7D1C4F3 /* SwiftKeychainWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftKeychainWrapper.modulemap; sourceTree = "<group>"; };
+		EF28C537355F02831E94C2C16BA68504 /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
+		F21095F52E5FA61DEC11891C53B98CD4 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		F5BBA66604926787C4CD16A765C1B8D6 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
+		F65FE4881F97D71023237913D36F1099 /* Pods-DatabaseMigrationUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DatabaseMigrationUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6A9D79A2868ADDBDF67E895D31864C2 /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECB.swift; path = Sources/CryptoSwift/BlockMode/ECB.swift; sourceTree = "<group>"; };
+		F73C4041AC041E805CDD91B9387F3F5C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F9FF8E850DDAC66EFB7EE2DD6A5B6701 /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = Sources/CryptoSwift/AES.swift; sourceTree = "<group>"; };
+		FCD4B48C0E7A197E63EFFEF5E1C9409A /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
+		FDA7D650ED14A474554EEC7EA7B37710 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		FEF0B5651A9424772C690EE8F8D281BF /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = Sources/CryptoSwift/Padding.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04486540BBC8795DB446EC299A620406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E71E2D148E84CE57F3BE71D2A808E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079A10FAF752262B2C37067F506BCA52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27276012E73B2BC2E2BDA69D16FD5897 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA3D8F409C4D38B2D4AB88700A0E437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE46B155714CA1F072E45CFF1655F6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C66B14E6489D348B55290E667D020B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FC23E272AE05F3FE25750A55EDAB89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD921A2BCD495684D701F0065D10AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD94277EB0703ECD5854B54DCF22FCC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C3386F5A23B229D985D57995ADA8BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDDE1202E56DF5F2AF049871A2173A2 /* Foundation.framework in Frameworks */,
+				D4AC5878485524A19CA8DFD60CF77375 /* SQLCipher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2DBCC7B5A159C377DE5149220A1CDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB36B047A737F6F816E5799096258DFF /* Foundation.framework in Frameworks */,
+				7398BA819E22E642DE91A16136701D87 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040A228BBE0762F088B838F4E9FC4048 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				2FA0976EB4FC5C207429579CC09FEC8C /* SQLCipher */,
+				CF85B1103671EFEA709D6C690003AC85 /* Support Files */,
+			);
+			name = FMDB;
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		0BCA62C24652DC7AB3829DD76F03A29C /* Pods-DatabaseMigration */ = {
+			isa = PBXGroup;
+			children = (
+				4CA4B660F26EB09361B89E8DDFDF5379 /* Pods-DatabaseMigration.modulemap */,
+				5E6B0E4819118A39CF1788B88B5D01B6 /* Pods-DatabaseMigration-acknowledgements.markdown */,
+				7A56E484106D5B5A7F87EE1D58C5F799 /* Pods-DatabaseMigration-acknowledgements.plist */,
+				403F96FA0BCF904A768840D50AA8F07A /* Pods-DatabaseMigration-dummy.m */,
+				5E578BFD286C269E7430A8E6103DA048 /* Pods-DatabaseMigration-frameworks.sh */,
+				162247EEE392AFEAB72F4B481AEDAB08 /* Pods-DatabaseMigration-Info.plist */,
+				4212F04E91D1B7EA953B326C1395940D /* Pods-DatabaseMigration-umbrella.h */,
+				0390E842F87B24892A065EBA3F6F1FE6 /* Pods-DatabaseMigration.debug.xcconfig */,
+				B26C0A77553B255C66C72E0921FC9DC9 /* Pods-DatabaseMigration.release.xcconfig */,
+			);
+			name = "Pods-DatabaseMigration";
+			path = "Target Support Files/Pods-DatabaseMigration";
+			sourceTree = "<group>";
+		};
+		110B304AB235B167A051B17E47F20715 /* SwiftKeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				CDE87F5114DB206D45D7AF7B23B134AC /* KeychainItemAccessibility.swift */,
+				59487559C01D5A310757E4CFD3E1EE93 /* KeychainWrapper.swift */,
+				33783E8BE7A1EAE8D702C7C0EEE75081 /* SwiftKeychainWrapper.h */,
+				A92265203CE8B97968F18DEC7CD13203 /* Support Files */,
+			);
+			name = SwiftKeychainWrapper;
+			path = SwiftKeychainWrapper;
+			sourceTree = "<group>";
+		};
+		24AEDA7448F515C4DB6FB11774A67650 /* Pods-DatabaseMigrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				51A36C5609C6D4DF48CBE41F7AA7F80F /* Pods-DatabaseMigrationTests.modulemap */,
+				89B42FD494C5EFBB2C18C755B43245D3 /* Pods-DatabaseMigrationTests-acknowledgements.markdown */,
+				C79C04636A34E8CF76563416D64B9941 /* Pods-DatabaseMigrationTests-acknowledgements.plist */,
+				AEFFADD5D1023B730BCA56608C712F4B /* Pods-DatabaseMigrationTests-dummy.m */,
+				5B3976F59747E2D08AED5AD4896F7136 /* Pods-DatabaseMigrationTests-Info.plist */,
+				3894BF8977AAEB27EE04F1A692DDC0D3 /* Pods-DatabaseMigrationTests-umbrella.h */,
+				2FBCACC5422E0A3B9A949945E7D8C25B /* Pods-DatabaseMigrationTests.debug.xcconfig */,
+				C866583956C7EAEE771B9A7409D021A6 /* Pods-DatabaseMigrationTests.release.xcconfig */,
+			);
+			name = "Pods-DatabaseMigrationTests";
+			path = "Target Support Files/Pods-DatabaseMigrationTests";
+			sourceTree = "<group>";
+		};
+		29A53F726DE90A4CAAF49AE1AB308604 /* CryptoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F9FF8E850DDAC66EFB7EE2DD6A5B6701 /* AES.swift */,
+				600FBAB5FF772072DBA5756ABC937D31 /* AES+Foundation.swift */,
+				DE8F5975AF3D062306BF78140F7A3D69 /* AES.Cryptors.swift */,
+				D84418F0326F1E96B9BE5DE19204ED01 /* Array+Extension.swift */,
+				6CBF74C2D307001A8A8E191990325B6F /* Array+Extensions.swift */,
+				9E23E78670FFB8A5720303C3DF4A45E0 /* Array+Foundation.swift */,
+				80A981E6330F051EB64BE70E6A7E6670 /* Authenticator.swift */,
+				F5BBA66604926787C4CD16A765C1B8D6 /* BatchedCollection.swift */,
+				65020297683313271EFFF1DF6BD74598 /* Bit.swift */,
+				63DDBD41DC2248D2AB17054975A90887 /* BlockCipher.swift */,
+				63A622D9BA3F0843712F62F73416A8E7 /* BlockMode.swift */,
+				60476912649CAEF747CB7E3CC4DF1722 /* BlockModeOptions.swift */,
+				2984790D9B1FFF9E1546F4617E598816 /* BlockModeWorker.swift */,
+				7F215019CAD1C2BF97DC4827A93DE541 /* Blowfish.swift */,
+				CE69B5200387C210ACDECD4AFDB2C13E /* Blowfish+Foundation.swift */,
+				6576E075B196CCBBBB9A0C198C90E27F /* CBC.swift */,
+				58C7AD8B3E048FD1DE62853895A5BBB7 /* CFB.swift */,
+				2890FB209C68356A55758FCFC54933DB /* ChaCha20.swift */,
+				5CEFDB3B59202D61C2FA8B4DC8D41411 /* ChaCha20+Foundation.swift */,
+				323A2D91614A4DE09909970923D0FF49 /* Checksum.swift */,
+				9F50B832B7262B0F6415E701A6A41C2A /* Cipher.swift */,
+				C73AF2A9FA8C74CCB3B272E68C93632F /* Collection+Extension.swift */,
+				B9DBF4DD9E70E3E86C41135D8506457C /* Cryptors.swift */,
+				087AC580ECA6E56C2B6593D884EC45E6 /* CTR.swift */,
+				D9E70FC1C75707B1D0716EE7D6F50A8E /* Data+Extension.swift */,
+				03E7039EE574CFF50DF8AD72C158FA0E /* Digest.swift */,
+				85B131331D8618F307BBC7179D9EF0FA /* DigestType.swift */,
+				F6A9D79A2868ADDBDF67E895D31864C2 /* ECB.swift */,
+				966C0F1B5094793E90CE0ED49325B4B8 /* Generics.swift */,
+				2854E01C89B4D836A17E22FAAC25B733 /* HKDF.swift */,
+				181DB5A5CC90409775E021E7A06BD8E5 /* HMAC.swift */,
+				8E829CE1B1103BC7C6B7684D2B4A2E2B /* HMAC+Foundation.swift */,
+				3680CF13EF162FC8A10F6F7EC4783C6C /* Int+Extension.swift */,
+				06F997DE59605A553458BF06911167E4 /* MD5.swift */,
+				8B3120569FC0988AAE4788AF4B186F8D /* NoPadding.swift */,
+				55AB844A81AE3349BE42B8C758B99401 /* OFB.swift */,
+				6CA4D605C7BCBCC0543C42F0FC4D5CE0 /* Operators.swift */,
+				FEF0B5651A9424772C690EE8F8D281BF /* Padding.swift */,
+				15115CF8883E42E027078DEA350E2EF5 /* PBKDF1.swift */,
+				264468780273F2A94AFF7A22296565CB /* PBKDF2.swift */,
+				977AFC462A0D86F05AF9939F8977D45D /* PCBC.swift */,
+				0FD474F530A93A4F3B2A4E6242DE3437 /* PKCS5.swift */,
+				C188E7707631BBA2715C4FA46224B74C /* PKCS7.swift */,
+				577B7D2B617ED91B47E2F494836CF51B /* PKCS7Padding.swift */,
+				0BE8E25B4408E7D976669FD84225143C /* Poly1305.swift */,
+				ACFFA8B2634A77BA8BF67D262D1138BE /* Rabbit.swift */,
+				0330DDDE9B026057C2CE13DC25ECACA6 /* Rabbit+Foundation.swift */,
+				B51AD20182EFBF7B15BE6D23D46EC052 /* RandomAccessBlockModeWorker.swift */,
+				9C6DC110E1D8CDDCC85D513146E0B526 /* RandomAccessCryptor.swift */,
+				78A039202139FF77FDB6AA710B12542A /* RandomBytesSequence.swift */,
+				1201F3EAA95480DA25DF4898472C9319 /* SecureBytes.swift */,
+				3FE6467B5DDDBF7E6E2303A16D56BCAB /* SHA1.swift */,
+				7CB9F7AD3B04CCED0B0DAFC85C51B38D /* SHA2.swift */,
+				94E462DED1E48BE59EA59A128109EEB4 /* SHA3.swift */,
+				DF9F6D9C609675527487AAA79D341749 /* String+Extension.swift */,
+				739FAA26FF85009C60B592F3BDB26234 /* String+FoundationExtension.swift */,
+				09A029137CD789AEAD37AB668A8860D6 /* UInt16+Extension.swift */,
+				79E18762F7DCD58C577A6CBFE8656AB8 /* UInt32+Extension.swift */,
+				6A8D8F6C8433D5A6E9D487A553025C22 /* UInt64+Extension.swift */,
+				2D2F33D93BE349D30C1E60E58F55070A /* UInt8+Extension.swift */,
+				00BDB8AD7D1B06DAE3743972E71A5CF9 /* Updatable.swift */,
+				38822FBB44A3D848561EECD0BB2B86EF /* Utils.swift */,
+				EF28C537355F02831E94C2C16BA68504 /* Utils+Foundation.swift */,
+				34BB5AE1B8BEC1A597BF859023F7E934 /* ZeroPadding.swift */,
+				F5EDF61A11DA0F5144AF4EE67DD1B3EF /* Support Files */,
+			);
+			name = CryptoSwift;
+			path = CryptoSwift;
+			sourceTree = "<group>";
+		};
+		2FA0976EB4FC5C207429579CC09FEC8C /* SQLCipher */ = {
+			isa = PBXGroup;
+			children = (
+				E68E0F19C1B9E5EE90F13445D9287C79 /* FMDatabase.h */,
+				FDA7D650ED14A474554EEC7EA7B37710 /* FMDatabase.m */,
+				F73C4041AC041E805CDD91B9387F3F5C /* FMDatabaseAdditions.h */,
+				1864F1A2451EBDBC065C993268237B48 /* FMDatabaseAdditions.m */,
+				A56932D23837F5DC8F71113ADE03804F /* FMDatabasePool.h */,
+				67E5CFFE1D7427037E7924FE9CE92DE1 /* FMDatabasePool.m */,
+				76D5FE73596B1EA898277A6ABD51CFF2 /* FMDatabaseQueue.h */,
+				0097CABFCDFA4559627F35A948C8205E /* FMDatabaseQueue.m */,
+				A16A8CDBD9D0CF35C4705B394AF88010 /* FMDB.h */,
+				F21095F52E5FA61DEC11891C53B98CD4 /* FMResultSet.h */,
+				A0D5EFBEF3F3C7C3CAC77210C4DEA0C1 /* FMResultSet.m */,
+			);
+			name = SQLCipher;
+			sourceTree = "<group>";
+		};
+		36B196A5303C58CCB503EC55B9D510E4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BCA62C24652DC7AB3829DD76F03A29C /* Pods-DatabaseMigration */,
+				24AEDA7448F515C4DB6FB11774A67650 /* Pods-DatabaseMigrationTests */,
+				41F7DCC954536A9E465C37CE3D0ECD43 /* Pods-DatabaseMigrationUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		41F7DCC954536A9E465C37CE3D0ECD43 /* Pods-DatabaseMigrationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB36DD938AC0C07DCD40BED17D42B688 /* Pods-DatabaseMigrationUITests.modulemap */,
+				F65FE4881F97D71023237913D36F1099 /* Pods-DatabaseMigrationUITests-acknowledgements.markdown */,
+				E8440F871676C4B12801A31C1A761B29 /* Pods-DatabaseMigrationUITests-acknowledgements.plist */,
+				30D17D35FBA43516997B2E74864DCD67 /* Pods-DatabaseMigrationUITests-dummy.m */,
+				DB64EE1E04C4BA5E55B249F9BE66C777 /* Pods-DatabaseMigrationUITests-Info.plist */,
+				ACC9701F061649127E2E3ED6B33A4C55 /* Pods-DatabaseMigrationUITests-umbrella.h */,
+				D457DE55BDAA5B6DE40D145402FC50C3 /* Pods-DatabaseMigrationUITests.debug.xcconfig */,
+				27CE676D10BD423E971EC6B2CFD1B6D8 /* Pods-DatabaseMigrationUITests.release.xcconfig */,
+			);
+			name = "Pods-DatabaseMigrationUITests";
+			path = "Target Support Files/Pods-DatabaseMigrationUITests";
+			sourceTree = "<group>";
+		};
+		516DFF6512E91E6BF05D4D0336170313 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D69BB2E4AD3DF30C5A969423C2F523E5 /* SQLCipher.framework */,
+				D6C49B09713B87DB4A3A3D5450150A85 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5395CCD1939DC85BCF8618BCEC813BFE /* SQLCipher */ = {
+			isa = PBXGroup;
+			children = (
+				F2F1826B0F9F4A8AC1D196CFDEB7112F /* common */,
+				82A55C212FE737CC4FA16EE59869B1D9 /* Support Files */,
+			);
+			name = SQLCipher;
+			path = SQLCipher;
+			sourceTree = "<group>";
+		};
+		5747AB678AF251D9DAF266E44C61487C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29A53F726DE90A4CAAF49AE1AB308604 /* CryptoSwift */,
+				040A228BBE0762F088B838F4E9FC4048 /* FMDB */,
+				5395CCD1939DC85BCF8618BCEC813BFE /* SQLCipher */,
+				110B304AB235B167A051B17E47F20715 /* SwiftKeychainWrapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6656977D2154C70270E049583B0FA330 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF744E820C0A9D9481D718A08C57A11F /* CryptoSwift.framework */,
+				E70D4950B3CE5367B2F33800BB661E5A /* FMDB.framework */,
+				0BEF62F3429E428AEBF2AB5FA758891C /* Pods_DatabaseMigration.framework */,
+				04B54CAECFBFCDD523314B4E2F0281A3 /* Pods_DatabaseMigrationTests.framework */,
+				BA0F88053672BEC6D9333127FFB90421 /* Pods_DatabaseMigrationUITests.framework */,
+				7C5AD6001A9948ED479E44F3081BEA87 /* SQLCipher.framework */,
+				C82346D8DDCED658D0630766B7310495 /* SwiftKeychainWrapper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82A55C212FE737CC4FA16EE59869B1D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4B8A966E72E42D040CAF0A6C1A95741 /* SQLCipher.modulemap */,
+				8EDDECDB0057715941B6D3CF5547928A /* SQLCipher.xcconfig */,
+				87153453C5685F96F0F61294D7500AE4 /* SQLCipher-dummy.m */,
+				4415D476B183B7C1435A67E97654592F /* SQLCipher-Info.plist */,
+				BEB03FC65F58F764F003D0AD07870CC8 /* SQLCipher-prefix.pch */,
+				42BEF9F861167A98DEA1498BD54A9322 /* SQLCipher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLCipher";
+			sourceTree = "<group>";
+		};
+		A92265203CE8B97968F18DEC7CD13203 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E88D629B7D2908975C1079E6D7D1C4F3 /* SwiftKeychainWrapper.modulemap */,
+				8CCE2CA1F2B447F1CB7AABA6F3B84472 /* SwiftKeychainWrapper.xcconfig */,
+				AABDA78D783C9836C4C2133F8C5C0E78 /* SwiftKeychainWrapper-dummy.m */,
+				B1DC41996EBC95FC5BB967E32510EE5F /* SwiftKeychainWrapper-Info.plist */,
+				8B5E0C8459D4E0EED1C29F43BE18BF10 /* SwiftKeychainWrapper-prefix.pch */,
+				98BFCD619B04E22049EC30E685D16342 /* SwiftKeychainWrapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftKeychainWrapper";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				516DFF6512E91E6BF05D4D0336170313 /* Frameworks */,
+				5747AB678AF251D9DAF266E44C61487C /* Pods */,
+				6656977D2154C70270E049583B0FA330 /* Products */,
+				36B196A5303C58CCB503EC55B9D510E4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF85B1103671EFEA709D6C690003AC85 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E044F4862B97B34931364AE68ED15AC9 /* FMDB.modulemap */,
+				137A596266A5E31F993B00260AE9F8B5 /* FMDB.xcconfig */,
+				7D2B26B929C2BC5EC6B5C91BBD0D41D8 /* FMDB-dummy.m */,
+				A1D8F21C5DB72C9BFF1FDA72CA6EE541 /* FMDB-Info.plist */,
+				36983549AA9D102B5E6CEF75EB7503A4 /* FMDB-prefix.pch */,
+				823A350731F3358F3E7B485CE7FA8990 /* FMDB-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		D6C49B09713B87DB4A3A3D5450150A85 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				215F046EBB631AED762CE8EF08E1EFA2 /* Foundation.framework */,
+				99C59E4985285FC213E956760151F1E1 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F2F1826B0F9F4A8AC1D196CFDEB7112F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BEC8C92E1E03B69A95A23A1EB8246143 /* sqlite3.c */,
+				2569DCC9495D2A5A3F38A5BEE47D95F7 /* sqlite3.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		F5EDF61A11DA0F5144AF4EE67DD1B3EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				175F584C9D7635375C987CBB75D22735 /* CryptoSwift.modulemap */,
+				44F74E4846E09C0B9E7BA48D29DDB2D8 /* CryptoSwift.xcconfig */,
+				FCD4B48C0E7A197E63EFFEF5E1C9409A /* CryptoSwift-dummy.m */,
+				C6769BC8EF710D851802B46171B531F1 /* CryptoSwift-Info.plist */,
+				0419D9F548AEFD47D3B9B594AFC6680C /* CryptoSwift-prefix.pch */,
+				5B735500DAD06D569F1535923ECEC8C7 /* CryptoSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CryptoSwift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		48CC4C08D0E678F188F631AC05BA3F76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA7FD41B931FB2F97C2C02319FB71FA /* Pods-DatabaseMigrationUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643C58E1E62B6A3025C3A51247782462 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5E6FFDEBE8EE76DF170AD020F5C57AF /* SwiftKeychainWrapper-umbrella.h in Headers */,
+				A99C6BDACF1B13D82B291031742E9E2C /* SwiftKeychainWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6490F208301AEB9DB9B6CC4AB1B8E8DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F329C452F177B85E713999B360E769A1 /* Pods-DatabaseMigrationTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739266AD8D7DF0639738D2E80153B0AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EDE93530C589345B893944A9230608 /* Pods-DatabaseMigration-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5987FFD3B9E1876D760F9EB066F20B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC825080449ADE2D4649A21139B94A76 /* SQLCipher-umbrella.h in Headers */,
+				C7789AA13057B6E638841FF680A7C696 /* sqlite3.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C6A9E4B5134CF9B4BB2D8552FAF3B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E6142BDCCB700E8A92B807B018589A /* CryptoSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD99A824245E5D00CAF3B755C9A52FC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363191B3A41D51E140294BC89298A3F9 /* FMDatabase.h in Headers */,
+				1263EB1FDCB41B8B69FF0E2E6D30DD94 /* FMDatabaseAdditions.h in Headers */,
+				FD87A0E742A3F83FF9BEBAD09A51C731 /* FMDatabasePool.h in Headers */,
+				91C29C5465545F723FF52A2B9A98AE61 /* FMDatabaseQueue.h in Headers */,
+				D0580AB3DDCFAB1B0DB309051E65A305 /* FMDB-umbrella.h in Headers */,
+				A17DDCC94A594604ED5CB7149491E132 /* FMDB.h in Headers */,
+				B74F2136A0AD4A2E39B7A5658FEFF0F9 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D74AD01A19E3591FFC26F551F2EB5E8 /* Pods-DatabaseMigration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F209130A8593E4B667C9DE8F5EDBC02A /* Build configuration list for PBXNativeTarget "Pods-DatabaseMigration" */;
+			buildPhases = (
+				739266AD8D7DF0639738D2E80153B0AE /* Headers */,
+				729403C0BA8B9961DD3A5BCAFDF6D6FE /* Sources */,
+				1FA3D8F409C4D38B2D4AB88700A0E437 /* Frameworks */,
+				43BF718B2ADE26AA497BBAACC6C3975E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B56721C2D6158CD4C347C95554FC4EC2 /* PBXTargetDependency */,
+				3E947D515FC34A1B18485AC04811AC30 /* PBXTargetDependency */,
+				7CC98B9B01CFD4209D83501251E14866 /* PBXTargetDependency */,
+				BA17DFDCDF162CBF6AAEC7934953CF9D /* PBXTargetDependency */,
+			);
+			name = "Pods-DatabaseMigration";
+			productName = "Pods-DatabaseMigration";
+			productReference = 0BEF62F3429E428AEBF2AB5FA758891C /* Pods_DatabaseMigration.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9EF4C1BF062FA6BF561A018BB8584A4 /* Pods-DatabaseMigrationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA59DDBED2F0CE7B13817FFD4915542 /* Build configuration list for PBXNativeTarget "Pods-DatabaseMigrationUITests" */;
+			buildPhases = (
+				48CC4C08D0E678F188F631AC05BA3F76 /* Headers */,
+				676300F609B89F9338BAF055F8A36226 /* Sources */,
+				BBD921A2BCD495684D701F0065D10AAE /* Frameworks */,
+				D79DBBCF789310E8D97A7749311E3F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1C44B6A29F0E9C5ADCF27A29AD854B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-DatabaseMigrationUITests";
+			productName = "Pods-DatabaseMigrationUITests";
+			productReference = BA0F88053672BEC6D9333127FFB90421 /* Pods_DatabaseMigrationUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD001B9F6C99C849C47A82A9ADAC5321 /* SQLCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3D39747BEBBDFA80869B88F1FFD70D5 /* Build configuration list for PBXNativeTarget "SQLCipher" */;
+			buildPhases = (
+				B5987FFD3B9E1876D760F9EB066F20B1 /* Headers */,
+				2ED4E06F60ADCC6E15967A0497CE07A4 /* Sources */,
+				FA2DBCC7B5A159C377DE5149220A1CDA /* Frameworks */,
+				40832FC3E229432D5C0F004AC607268A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLCipher;
+			productName = SQLCipher;
+			productReference = 7C5AD6001A9948ED479E44F3081BEA87 /* SQLCipher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E69A6D626741B0185EC71F21028FAC76 /* Pods-DatabaseMigrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035BA2DF3BDA6D26178E259E845ABCD6 /* Build configuration list for PBXNativeTarget "Pods-DatabaseMigrationTests" */;
+			buildPhases = (
+				6490F208301AEB9DB9B6CC4AB1B8E8DA /* Headers */,
+				3F4F92223E215DDEAA27990A35B5B19D /* Sources */,
+				2C66B14E6489D348B55290E667D020B0 /* Frameworks */,
+				EADFBCCA8D9C2C7177D59FB6A4CEC75E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CABBAFA07E4EAC98584ED59232D196 /* PBXTargetDependency */,
+			);
+			name = "Pods-DatabaseMigrationTests";
+			productName = "Pods-DatabaseMigrationTests";
+			productReference = 04B54CAECFBFCDD523314B4E2F0281A3 /* Pods_DatabaseMigrationTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8FFC9AC7CAA9414E4FFB29D876FD712 /* CryptoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94192C0919D466E922756519DEB32A22 /* Build configuration list for PBXNativeTarget "CryptoSwift" */;
+			buildPhases = (
+				C0C6A9E4B5134CF9B4BB2D8552FAF3B2 /* Headers */,
+				721C3AF2C748D8CD3AE5717A19821B7C /* Sources */,
+				04486540BBC8795DB446EC299A620406 /* Frameworks */,
+				9DE6EE043A6267E1F25B36AD3F64033B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoSwift;
+			productName = CryptoSwift;
+			productReference = AF744E820C0A9D9481D718A08C57A11F /* CryptoSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EA1847764C84E7705DEB14A33A1936AE /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4229C8CCCA4BB69E5821BA550E575A8E /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				DD99A824245E5D00CAF3B755C9A52FC6 /* Headers */,
+				6B5D5D94BF6A09D160CBC3B0984ED666 /* Sources */,
+				E6C3386F5A23B229D985D57995ADA8BF /* Frameworks */,
+				EC0DEB67378C8D54C481A139893CFBD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C03AA6E754F1ABBF6A16CBC2D5E7B41 /* PBXTargetDependency */,
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = E70D4950B3CE5367B2F33800BB661E5A /* FMDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD2730DAA1CFC0F43915E51A72AF15D3 /* SwiftKeychainWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49AD3EA3D1F60AE0699AD0C0D1FB1DD9 /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */;
+			buildPhases = (
+				643C58E1E62B6A3025C3A51247782462 /* Headers */,
+				621CDD47F3CC44C4B90F2AC08391FC65 /* Sources */,
+				079A10FAF752262B2C37067F506BCA52 /* Frameworks */,
+				B7785D50A394861954EF724061CB7898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftKeychainWrapper;
+			productName = SwiftKeychainWrapper;
+			productReference = C82346D8DDCED658D0630766B7310495 /* SwiftKeychainWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6656977D2154C70270E049583B0FA330 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8FFC9AC7CAA9414E4FFB29D876FD712 /* CryptoSwift */,
+				EA1847764C84E7705DEB14A33A1936AE /* FMDB */,
+				5D74AD01A19E3591FFC26F551F2EB5E8 /* Pods-DatabaseMigration */,
+				E69A6D626741B0185EC71F21028FAC76 /* Pods-DatabaseMigrationTests */,
+				C9EF4C1BF062FA6BF561A018BB8584A4 /* Pods-DatabaseMigrationUITests */,
+				CD001B9F6C99C849C47A82A9ADAC5321 /* SQLCipher */,
+				FD2730DAA1CFC0F43915E51A72AF15D3 /* SwiftKeychainWrapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40832FC3E229432D5C0F004AC607268A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43BF718B2ADE26AA497BBAACC6C3975E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE6EE043A6267E1F25B36AD3F64033B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7785D50A394861954EF724061CB7898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79DBBCF789310E8D97A7749311E3F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADFBCCA8D9C2C7177D59FB6A4CEC75E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0DEB67378C8D54C481A139893CFBD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ED4E06F60ADCC6E15967A0497CE07A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B5EFC1D57BA12861BAFC1035597927 /* SQLCipher-dummy.m in Sources */,
+				0372B4CB53DA6298C3C13142B7239393 /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4F92223E215DDEAA27990A35B5B19D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4202F247181C85E5517AC57080AAFBF /* Pods-DatabaseMigrationTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621CDD47F3CC44C4B90F2AC08391FC65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A9A4B4078CDDFE4AF8AC49593E8A42 /* KeychainItemAccessibility.swift in Sources */,
+				C195D690C11AD93859729738F72660FF /* KeychainWrapper.swift in Sources */,
+				E6C29289B9704AB3285A1EC93DD2072F /* SwiftKeychainWrapper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676300F609B89F9338BAF055F8A36226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7DCAA245AAA39B35FC0BECF3C4B2F0 /* Pods-DatabaseMigrationUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B5D5D94BF6A09D160CBC3B0984ED666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3B8EB4D23EA1F72299497B9040D5B6 /* FMDatabase.m in Sources */,
+				D11E27768C3D7042E495CC9DB46F7B63 /* FMDatabaseAdditions.m in Sources */,
+				D9656C53925D64890EC74A476327FE65 /* FMDatabasePool.m in Sources */,
+				6670FE2737C60AF92F9D303FE6DE7D9A /* FMDatabaseQueue.m in Sources */,
+				6EBCB4B4941CF235F24559946CC1330C /* FMDB-dummy.m in Sources */,
+				F8D2D3164D0541A8DAC33D27FD5B6785 /* FMResultSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721C3AF2C748D8CD3AE5717A19821B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443219221089F48C4BC816067D72A65B /* AES+Foundation.swift in Sources */,
+				928C7662E3E9EFA99CD5DF95F24370F0 /* AES.Cryptors.swift in Sources */,
+				8E0070168B8B9F2F85F7967F3C75B261 /* AES.swift in Sources */,
+				C9A58ECEE8A5D0DF85017407E5746DE9 /* Array+Extension.swift in Sources */,
+				A7701F1FC75F5C3019F1CDCF8A708C6F /* Array+Extensions.swift in Sources */,
+				40512C9B317A8280D1288F4C76167549 /* Array+Foundation.swift in Sources */,
+				357F0B1A69B692472084F34A6F2E81CC /* Authenticator.swift in Sources */,
+				165719C6963AB604318CC97C300E7D4D /* BatchedCollection.swift in Sources */,
+				65C928CDCA18FAC8D831958EA846C5B0 /* Bit.swift in Sources */,
+				13A12ED27F3E9F5D1129AE9F1387298D /* BlockCipher.swift in Sources */,
+				764D5FC1BDBB28E8159694F6AED53933 /* BlockMode.swift in Sources */,
+				7C0712F08B4EDC71242BC2D2E91D83D4 /* BlockModeOptions.swift in Sources */,
+				DBC6F76E7EE2E018A8F0C2A915691D4D /* BlockModeWorker.swift in Sources */,
+				757D47F18BF35F18BF9CEEF42DC886DA /* Blowfish+Foundation.swift in Sources */,
+				E218178EC4BCCF506AB6A399A21BA5EB /* Blowfish.swift in Sources */,
+				032C7E851138162F946209788DD4689C /* CBC.swift in Sources */,
+				8426E3C0B72B119F3CA4574E721AAEF5 /* CFB.swift in Sources */,
+				FB7AF59E9922805F9381448B2A8DDF9F /* ChaCha20+Foundation.swift in Sources */,
+				12968222CE856956292917C29F8E289A /* ChaCha20.swift in Sources */,
+				E66DE34B9E642B42A247D9F2E4BA9D19 /* Checksum.swift in Sources */,
+				6ED1C4085935FB771E52EC4741111A47 /* Cipher.swift in Sources */,
+				83361CD38688B987C2EC0E54ABFF0D29 /* Collection+Extension.swift in Sources */,
+				801E2BD612215252FFF0301C1E6DCB61 /* Cryptors.swift in Sources */,
+				C8B3D3BBC0640EF19BA6006DA60C3416 /* CryptoSwift-dummy.m in Sources */,
+				52213019324C788E944186E941AB0321 /* CTR.swift in Sources */,
+				B6DC0050E1410F2880B36F831DB95FEA /* Data+Extension.swift in Sources */,
+				D8533D1C9EA7D9964E95241DEF63905E /* Digest.swift in Sources */,
+				204B94FB5CECA03673274B315519DAA9 /* DigestType.swift in Sources */,
+				55D9AAD4E963A78D8147A0ABB447B930 /* ECB.swift in Sources */,
+				8DC29E0A826425D8A464F758E0D10791 /* Generics.swift in Sources */,
+				7ED87E8A6EFA4D562AF551BA52587F87 /* HKDF.swift in Sources */,
+				C0C6A9FFBC9F44F1A9A3DF578F3A8186 /* HMAC+Foundation.swift in Sources */,
+				BCFB22880787EB920A3C4486102F64A8 /* HMAC.swift in Sources */,
+				EBE593FE683CC340CDABA82F3DD392DB /* Int+Extension.swift in Sources */,
+				A77138423F13D5237233931075F87E46 /* MD5.swift in Sources */,
+				BCB82EB7E95326D5EB7748C14A91605C /* NoPadding.swift in Sources */,
+				1869E51B0C78A0E0E822E50E896EDA7D /* OFB.swift in Sources */,
+				971D29D7EA936AD728E0B6EFCF964BED /* Operators.swift in Sources */,
+				249E84DBBFA0D3C6F325B66140488F9E /* Padding.swift in Sources */,
+				068E7E07C95C1414200636CD5AB8D49D /* PBKDF1.swift in Sources */,
+				A2A1260C5AEE7A0187C526BB9E90EE90 /* PBKDF2.swift in Sources */,
+				9C239CA425489B99CB07A96C0B6894F7 /* PCBC.swift in Sources */,
+				485AFBD565D2B6EE10E256DF820D3C9F /* PKCS5.swift in Sources */,
+				20F1F5F8F7160DCD31D148C30E0AB508 /* PKCS7.swift in Sources */,
+				8F1ACD4E6D75DCBAED8BDA601605D576 /* PKCS7Padding.swift in Sources */,
+				933358A35E52F43C8FB9FFEE6076B6A2 /* Poly1305.swift in Sources */,
+				303EFEC4793D6E522E696ADF35E0F45A /* Rabbit+Foundation.swift in Sources */,
+				EE123A7FF2B42ADB4E6DD11606103F4A /* Rabbit.swift in Sources */,
+				7A6A5E6868A7C4F0E0E4DD6F0AF4B917 /* RandomAccessBlockModeWorker.swift in Sources */,
+				A9081F401BA346B177C20FB9CE9B6A61 /* RandomAccessCryptor.swift in Sources */,
+				45476A14851C2EB13E6447327902D466 /* RandomBytesSequence.swift in Sources */,
+				8330774C740AB06E7E049E7F429BD6D9 /* SecureBytes.swift in Sources */,
+				A1BA7E1EAA401D3E25F4E16A08D3E65C /* SHA1.swift in Sources */,
+				1C64FBFC7FC934DDACCBE91BF65399A2 /* SHA2.swift in Sources */,
+				5D2594DC36F3418F18F55FC332486636 /* SHA3.swift in Sources */,
+				6EE4A8AC454BA7D2F604BD374FD4A2D7 /* String+Extension.swift in Sources */,
+				0566899C870BAB693DC577E3E22CF4F7 /* String+FoundationExtension.swift in Sources */,
+				FFDF442F8B9B340EA7E1D2AF76599D95 /* UInt16+Extension.swift in Sources */,
+				4742ED0EE22F5A0E258C81DA3942C1ED /* UInt32+Extension.swift in Sources */,
+				B32FC322426DA6D382CEAD2E3377F5AD /* UInt64+Extension.swift in Sources */,
+				CDE893452A4217631DE954149D55E49F /* UInt8+Extension.swift in Sources */,
+				6F8E9881530B1BDE6AC51CDA47000984 /* Updatable.swift in Sources */,
+				1049CFD71E54B588C66FC293C1EA223A /* Utils+Foundation.swift in Sources */,
+				E78C281224D44EDACBF0C0C39E1C8144 /* Utils.swift in Sources */,
+				CA7697FD51CB12B67EC92329CB9498BF /* ZeroPadding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729403C0BA8B9961DD3A5BCAFDF6D6FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C07F4395D5A641D9D3E32E3D750BA5 /* Pods-DatabaseMigration-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E947D515FC34A1B18485AC04811AC30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = EA1847764C84E7705DEB14A33A1936AE /* FMDB */;
+			targetProxy = 569CB0320F877AC684F04A135A752684 /* PBXContainerItemProxy */;
+		};
+		5C03AA6E754F1ABBF6A16CBC2D5E7B41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLCipher;
+			target = CD001B9F6C99C849C47A82A9ADAC5321 /* SQLCipher */;
+			targetProxy = 4E0EC457F77433DD9D07BEE87F362987 /* PBXContainerItemProxy */;
+		};
+		7CC98B9B01CFD4209D83501251E14866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLCipher;
+			target = CD001B9F6C99C849C47A82A9ADAC5321 /* SQLCipher */;
+			targetProxy = BD7A4C9CD821DC2C43313D617E84DB81 /* PBXContainerItemProxy */;
+		};
+		99CABBAFA07E4EAC98584ED59232D196 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DatabaseMigration";
+			target = 5D74AD01A19E3591FFC26F551F2EB5E8 /* Pods-DatabaseMigration */;
+			targetProxy = C00D6EF988E54D14BFF25D8A07AE2751 /* PBXContainerItemProxy */;
+		};
+		B1C44B6A29F0E9C5ADCF27A29AD854B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DatabaseMigration";
+			target = 5D74AD01A19E3591FFC26F551F2EB5E8 /* Pods-DatabaseMigration */;
+			targetProxy = EC2A711B95F90D7A58B28D5A235DA9F9 /* PBXContainerItemProxy */;
+		};
+		B56721C2D6158CD4C347C95554FC4EC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			target = E8FFC9AC7CAA9414E4FFB29D876FD712 /* CryptoSwift */;
+			targetProxy = 95A87DBDB8927665B8C967AA9484A074 /* PBXContainerItemProxy */;
+		};
+		BA17DFDCDF162CBF6AAEC7934953CF9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftKeychainWrapper;
+			target = FD2730DAA1CFC0F43915E51A72AF15D3 /* SwiftKeychainWrapper */;
+			targetProxy = F0887DF3C3E4838A547984EC3CB9A63F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05AC1618E389E3F65BBDFE472EDB1C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137A596266A5E31F993B00260AE9F8B5 /* FMDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2CA79627D0B8BB56E6B47D958E7C49F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCE2CA1F2B447F1CB7AABA6F3B84472 /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				PRODUCT_MODULE_NAME = SwiftKeychainWrapper;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		760048DF6D41724A1BF808D2B434809B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137A596266A5E31F993B00260AE9F8B5 /* FMDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		85A2D2C5F3F8BF5252D2A130C05F1AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0390E842F87B24892A065EBA3F6F1FE6 /* Pods-DatabaseMigration.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DatabaseMigration/Pods-DatabaseMigration-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DatabaseMigration/Pods-DatabaseMigration.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8811BA2FA775B496EDAB413F1807C0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F74E4846E09C0B9E7BA48D29DDB2D8 /* CryptoSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/CryptoSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
+				PRODUCT_MODULE_NAME = CryptoSwift;
+				PRODUCT_NAME = CryptoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8905943CC367B7C6B27C0A1CD1A8FF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27CE676D10BD423E971EC6B2CFD1B6D8 /* Pods-DatabaseMigrationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DatabaseMigrationUITests/Pods-DatabaseMigrationUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DatabaseMigrationUITests/Pods-DatabaseMigrationUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D3DCE1E9148C6C4180E2F1201E40A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCE2CA1F2B447F1CB7AABA6F3B84472 /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				PRODUCT_MODULE_NAME = SwiftKeychainWrapper;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		988EF552519570E20D04895DE09E1095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDDECDB0057715941B6D3CF5547928A /* SQLCipher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/SQLCipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
+				PRODUCT_MODULE_NAME = SQLCipher;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AA81D0133328DB7BDEC635240507FE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26C0A77553B255C66C72E0921FC9DC9 /* Pods-DatabaseMigration.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DatabaseMigration/Pods-DatabaseMigration-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DatabaseMigration/Pods-DatabaseMigration.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7248547932C8E6FE5113579E73909E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C866583956C7EAEE771B9A7409D021A6 /* Pods-DatabaseMigrationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DatabaseMigrationTests/Pods-DatabaseMigrationTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DatabaseMigrationTests/Pods-DatabaseMigrationTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D5F82BF605CB17E443B89FACBD5BF974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBCACC5422E0A3B9A949945E7D8C25B /* Pods-DatabaseMigrationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DatabaseMigrationTests/Pods-DatabaseMigrationTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DatabaseMigrationTests/Pods-DatabaseMigrationTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E40554AAE01D343659DC3FD99E63189A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDDECDB0057715941B6D3CF5547928A /* SQLCipher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/SQLCipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
+				PRODUCT_MODULE_NAME = SQLCipher;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E802BA5C3ED4D7A8C959065AD5539BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D457DE55BDAA5B6DE40D145402FC50C3 /* Pods-DatabaseMigrationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DatabaseMigrationUITests/Pods-DatabaseMigrationUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DatabaseMigrationUITests/Pods-DatabaseMigrationUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9948DD1B0CD79F9099F3C9920C282F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F74E4846E09C0B9E7BA48D29DDB2D8 /* CryptoSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/CryptoSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
+				PRODUCT_MODULE_NAME = CryptoSwift;
+				PRODUCT_NAME = CryptoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		035BA2DF3BDA6D26178E259E845ABCD6 /* Build configuration list for PBXNativeTarget "Pods-DatabaseMigrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F82BF605CB17E443B89FACBD5BF974 /* Debug */,
+				B7248547932C8E6FE5113579E73909E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4229C8CCCA4BB69E5821BA550E575A8E /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05AC1618E389E3F65BBDFE472EDB1C4D /* Debug */,
+				760048DF6D41724A1BF808D2B434809B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1391485F05B41BD35738A433056B7FA /* Debug */,
+				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49AD3EA3D1F60AE0699AD0C0D1FB1DD9 /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA79627D0B8BB56E6B47D958E7C49F0 /* Debug */,
+				8D3DCE1E9148C6C4180E2F1201E40A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94192C0919D466E922756519DEB32A22 /* Build configuration list for PBXNativeTarget "CryptoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9948DD1B0CD79F9099F3C9920C282F8 /* Debug */,
+				8811BA2FA775B496EDAB413F1807C0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA59DDBED2F0CE7B13817FFD4915542 /* Build configuration list for PBXNativeTarget "Pods-DatabaseMigrationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E802BA5C3ED4D7A8C959065AD5539BB4 /* Debug */,
+				8905943CC367B7C6B27C0A1CD1A8FF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3D39747BEBBDFA80869B88F1FFD70D5 /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40554AAE01D343659DC3FD99E63189A /* Debug */,
+				988EF552519570E20D04895DE09E1095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F209130A8593E4B667C9DE8F5EDBC02A /* Build configuration list for PBXNativeTarget "Pods-DatabaseMigration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A2D2C5F3F8BF5252D2A130C05F1AEA /* Debug */,
+				AA81D0133328DB7BDEC635240507FE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

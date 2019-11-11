@@ -14,6 +14,16 @@
 		4C26897522BCA82D00D01042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C26897322BCA82D00D01042 /* LaunchScreen.storyboard */; };
 		4C26898022BCA82D00D01042 /* DatabaseMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26897F22BCA82D00D01042 /* DatabaseMigrationTests.swift */; };
 		4C26898B22BCA82D00D01042 /* DatabaseMigrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26898A22BCA82D00D01042 /* DatabaseMigrationUITests.swift */; };
+		4C26899D22BCA95D00D01042 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26899A22BCA95D00D01042 /* KeychainHelper.swift */; };
+		4C26899E22BCA95D00D01042 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26899B22BCA95D00D01042 /* DatabaseHelper.swift */; };
+		4C26899F22BCA95D00D01042 /* AES256Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26899C22BCA95D00D01042 /* AES256Helper.swift */; };
+		4C2689AA22BCAAB800D01042 /* migration-2.sql in Resources */ = {isa = PBXBuildFile; fileRef = 4C2689A522BCAAB800D01042 /* migration-2.sql */; };
+		4C2689AB22BCAAB800D01042 /* migration-1.sql in Resources */ = {isa = PBXBuildFile; fileRef = 4C2689A622BCAAB800D01042 /* migration-1.sql */; };
+		4C2689B822BCACA900D01042 /* AbstractRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2689B122BCACA900D01042 /* AbstractRepository.swift */; };
+		4C2689B922BCACA900D01042 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2689B222BCACA900D01042 /* ProductRepository.swift */; };
+		59543160F5325C4EA11C7B11 /* Pods_DatabaseMigration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F4541D0F631C6902CC5A12 /* Pods_DatabaseMigration.framework */; };
+		9FEF6127CA99BD39E7AA7317 /* Pods_DatabaseMigrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E956B029FB1295EB8EAD7F9 /* Pods_DatabaseMigrationTests.framework */; };
+		BEB5B78BF05DC0D4B06398D6 /* Pods_DatabaseMigrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C45A79AE111485FF1497DDB /* Pods_DatabaseMigrationUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3969D18DB8C6627067EB6FEC /* Pods-DatabaseMigration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseMigration.release.xcconfig"; path = "Target Support Files/Pods-DatabaseMigration/Pods-DatabaseMigration.release.xcconfig"; sourceTree = "<group>"; };
 		4C26896722BCA82B00D01042 /* DatabaseMigration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatabaseMigration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C26896A22BCA82B00D01042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C26896C22BCA82B00D01042 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,23 @@
 		4C26898622BCA82D00D01042 /* DatabaseMigrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabaseMigrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C26898A22BCA82D00D01042 /* DatabaseMigrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseMigrationUITests.swift; sourceTree = "<group>"; };
 		4C26898C22BCA82D00D01042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C26899A22BCA95D00D01042 /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		4C26899B22BCA95D00D01042 /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		4C26899C22BCA95D00D01042 /* AES256Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES256Helper.swift; sourceTree = "<group>"; };
+		4C2689A522BCAAB800D01042 /* migration-2.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "migration-2.sql"; sourceTree = "<group>"; };
+		4C2689A622BCAAB800D01042 /* migration-1.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "migration-1.sql"; sourceTree = "<group>"; };
+		4C2689AE22BCACA900D01042 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		4C2689AF22BCACA900D01042 /* CategoriesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesRepository.swift; sourceTree = "<group>"; };
+		4C2689B122BCACA900D01042 /* AbstractRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractRepository.swift; sourceTree = "<group>"; };
+		4C2689B222BCACA900D01042 /* ProductRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		56F4541D0F631C6902CC5A12 /* Pods_DatabaseMigration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatabaseMigration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B39BDE8E4A6F3F2C35627C0 /* Pods-DatabaseMigrationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseMigrationUITests.release.xcconfig"; path = "Target Support Files/Pods-DatabaseMigrationUITests/Pods-DatabaseMigrationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7DEC21944E9331C35C6CB834 /* Pods-DatabaseMigrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseMigrationTests.release.xcconfig"; path = "Target Support Files/Pods-DatabaseMigrationTests/Pods-DatabaseMigrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		97C8484AB7D17010EE9714EF /* Pods-DatabaseMigrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseMigrationUITests.debug.xcconfig"; path = "Target Support Files/Pods-DatabaseMigrationUITests/Pods-DatabaseMigrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C45A79AE111485FF1497DDB /* Pods_DatabaseMigrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatabaseMigrationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E956B029FB1295EB8EAD7F9 /* Pods_DatabaseMigrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatabaseMigrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F52AD00448C1B04651E457 /* Pods-DatabaseMigrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseMigrationTests.debug.xcconfig"; path = "Target Support Files/Pods-DatabaseMigrationTests/Pods-DatabaseMigrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2805E6AA87A55F5196520C2 /* Pods-DatabaseMigration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseMigration.debug.xcconfig"; path = "Target Support Files/Pods-DatabaseMigration/Pods-DatabaseMigration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59543160F5325C4EA11C7B11 /* Pods_DatabaseMigration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEF6127CA99BD39E7AA7317 /* Pods_DatabaseMigrationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB5B78BF05DC0D4B06398D6 /* Pods_DatabaseMigrationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +112,8 @@
 				4C26897E22BCA82D00D01042 /* DatabaseMigrationTests */,
 				4C26898922BCA82D00D01042 /* DatabaseMigrationUITests */,
 				4C26896822BCA82B00D01042 /* Products */,
+				6E02BBA4E43CB11F69A78A39 /* Pods */,
+				D31439D0DBE2CB699B33BFA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +130,9 @@
 		4C26896922BCA82B00D01042 /* DatabaseMigration */ = {
 			isa = PBXGroup;
 			children = (
+				4C2689AD22BCACA900D01042 /* Repositories */,
+				4C2689A022BCAAAA00D01042 /* Assest */,
+				4C26899822BCA95D00D01042 /* DatabaseHelper */,
 				4C26896A22BCA82B00D01042 /* AppDelegate.swift */,
 				4C26896C22BCA82B00D01042 /* ViewController.swift */,
 				4C26896E22BCA82B00D01042 /* Main.storyboard */,
@@ -125,6 +161,83 @@
 			path = DatabaseMigrationUITests;
 			sourceTree = "<group>";
 		};
+		4C26899822BCA95D00D01042 /* DatabaseHelper */ = {
+			isa = PBXGroup;
+			children = (
+				4C26899922BCA95D00D01042 /* Classes */,
+			);
+			path = DatabaseHelper;
+			sourceTree = "<group>";
+		};
+		4C26899922BCA95D00D01042 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C26899A22BCA95D00D01042 /* KeychainHelper.swift */,
+				4C26899B22BCA95D00D01042 /* DatabaseHelper.swift */,
+				4C26899C22BCA95D00D01042 /* AES256Helper.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4C2689A022BCAAAA00D01042 /* Assest */ = {
+			isa = PBXGroup;
+			children = (
+				4C2689A122BCAAB800D01042 /* DB */,
+			);
+			path = Assest;
+			sourceTree = "<group>";
+		};
+		4C2689A122BCAAB800D01042 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				4C2689A422BCAAB800D01042 /* Migration Script */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		4C2689A422BCAAB800D01042 /* Migration Script */ = {
+			isa = PBXGroup;
+			children = (
+				4C2689A522BCAAB800D01042 /* migration-2.sql */,
+				4C2689A622BCAAB800D01042 /* migration-1.sql */,
+			);
+			path = "Migration Script";
+			sourceTree = "<group>";
+		};
+		4C2689AD22BCACA900D01042 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4C2689AE22BCACA900D01042 /* UserRepository.swift */,
+				4C2689AF22BCACA900D01042 /* CategoriesRepository.swift */,
+				4C2689B122BCACA900D01042 /* AbstractRepository.swift */,
+				4C2689B222BCACA900D01042 /* ProductRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6E02BBA4E43CB11F69A78A39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2805E6AA87A55F5196520C2 /* Pods-DatabaseMigration.debug.xcconfig */,
+				3969D18DB8C6627067EB6FEC /* Pods-DatabaseMigration.release.xcconfig */,
+				B2F52AD00448C1B04651E457 /* Pods-DatabaseMigrationTests.debug.xcconfig */,
+				7DEC21944E9331C35C6CB834 /* Pods-DatabaseMigrationTests.release.xcconfig */,
+				97C8484AB7D17010EE9714EF /* Pods-DatabaseMigrationUITests.debug.xcconfig */,
+				6B39BDE8E4A6F3F2C35627C0 /* Pods-DatabaseMigrationUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D31439D0DBE2CB699B33BFA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56F4541D0F631C6902CC5A12 /* Pods_DatabaseMigration.framework */,
+				9E956B029FB1295EB8EAD7F9 /* Pods_DatabaseMigrationTests.framework */,
+				9C45A79AE111485FF1497DDB /* Pods_DatabaseMigrationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C26898F22BCA82D00D01042 /* Build configuration list for PBXNativeTarget "DatabaseMigration" */;
 			buildPhases = (
+				AE99C8ADBF4EB5C786E43FD6 /* [CP] Check Pods Manifest.lock */,
 				4C26896322BCA82B00D01042 /* Sources */,
 				4C26896422BCA82B00D01042 /* Frameworks */,
 				4C26896522BCA82B00D01042 /* Resources */,
+				89EF81309579F59F9F112DEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C26899222BCA82D00D01042 /* Build configuration list for PBXNativeTarget "DatabaseMigrationTests" */;
 			buildPhases = (
+				06F42C4AD00565737B5F6463 /* [CP] Check Pods Manifest.lock */,
 				4C26897722BCA82D00D01042 /* Sources */,
 				4C26897822BCA82D00D01042 /* Frameworks */,
 				4C26897922BCA82D00D01042 /* Resources */,
@@ -167,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C26899522BCA82D00D01042 /* Build configuration list for PBXNativeTarget "DatabaseMigrationUITests" */;
 			buildPhases = (
+				2BC6E722BE6321C135C926CD /* [CP] Check Pods Manifest.lock */,
 				4C26898222BCA82D00D01042 /* Sources */,
 				4C26898322BCA82D00D01042 /* Frameworks */,
 				4C26898422BCA82D00D01042 /* Resources */,
@@ -229,6 +346,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2689AB22BCAAB800D01042 /* migration-1.sql in Resources */,
+				4C2689AA22BCAAB800D01042 /* migration-2.sql in Resources */,
 				4C26897522BCA82D00D01042 /* LaunchScreen.storyboard in Resources */,
 				4C26897222BCA82D00D01042 /* Assets.xcassets in Resources */,
 				4C26897022BCA82B00D01042 /* Main.storyboard in Resources */,
@@ -251,12 +370,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06F42C4AD00565737B5F6463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatabaseMigrationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BC6E722BE6321C135C926CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatabaseMigrationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89EF81309579F59F9F112DEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatabaseMigration/Pods-DatabaseMigration-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DatabaseMigration/Pods-DatabaseMigration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE99C8ADBF4EB5C786E43FD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatabaseMigration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C26896322BCA82B00D01042 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C26899E22BCA95D00D01042 /* DatabaseHelper.swift in Sources */,
 				4C26896D22BCA82B00D01042 /* ViewController.swift in Sources */,
+				4C26899D22BCA95D00D01042 /* KeychainHelper.swift in Sources */,
+				4C2689B922BCACA900D01042 /* ProductRepository.swift in Sources */,
+				4C2689B822BCACA900D01042 /* AbstractRepository.swift in Sources */,
+				4C26899F22BCA95D00D01042 /* AES256Helper.swift in Sources */,
 				4C26896B22BCA82B00D01042 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,15 +651,18 @@
 		};
 		4C26899022BCA82D00D01042 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2805E6AA87A55F5196520C2 /* Pods-DatabaseMigration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA4BAP9K3F;
 				INFOPLIST_FILE = DatabaseMigration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = www.www.demo.DatabaseMigration;
+				PRODUCT_BUNDLE_IDENTIFIER = www.www.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,15 +671,18 @@
 		};
 		4C26899122BCA82D00D01042 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3969D18DB8C6627067EB6FEC /* Pods-DatabaseMigration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA4BAP9K3F;
 				INFOPLIST_FILE = DatabaseMigration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = www.www.demo.DatabaseMigration;
+				PRODUCT_BUNDLE_IDENTIFIER = www.www.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,6 +691,7 @@
 		};
 		4C26899322BCA82D00D01042 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F52AD00448C1B04651E457 /* Pods-DatabaseMigrationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +712,7 @@
 		};
 		4C26899422BCA82D00D01042 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DEC21944E9331C35C6CB834 /* Pods-DatabaseMigrationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +733,7 @@
 		};
 		4C26899622BCA82D00D01042 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C8484AB7D17010EE9714EF /* Pods-DatabaseMigrationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +753,7 @@
 		};
 		4C26899722BCA82D00D01042 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B39BDE8E4A6F3F2C35627C0 /* Pods-DatabaseMigrationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,32 @@
+PODS:
+  - CryptoSwift (0.8.3)
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - SQLCipher (4.2.0):
+    - SQLCipher/standard (= 4.2.0)
+  - SQLCipher/common (4.2.0)
+  - SQLCipher/standard (4.2.0):
+    - SQLCipher/common
+  - SwiftKeychainWrapper (3.3.0)
+
+DEPENDENCIES:
+  - CryptoSwift (~> 0.8.3)
+  - FMDB/SQLCipher
+  - SwiftKeychainWrapper
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CryptoSwift
+    - FMDB
+    - SQLCipher
+    - SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  CryptoSwift: 033efc3523865d19cc6ab6612fa17a62613b5dfa
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SQLCipher: 0187a2180ac288ea686b670b7141da62cd013b16
+  SwiftKeychainWrapper: ef5ad793bc0e08e24a5913f28345b8f7bc8e4123
+
+PODFILE CHECKSUM: b3420fb34f9c2d21afe6af840c23ca2dbe5892c0
+
+COCOAPODS: 1.6.1
